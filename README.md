@@ -47,7 +47,7 @@ The algorithm works as follows:
 
 The main routine initializes the system, then continuously calls this process in an infinite loop.
 
-* Subroutines
+Subroutines
 
 - sendByte: Sends the ASCII code stored in R0 via UART1 by writing to SBUF1, waits for the transmission flag (TI1), then resets it.
 
