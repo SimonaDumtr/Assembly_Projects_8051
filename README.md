@@ -4,7 +4,7 @@ This repository contains two assembly projects developed for the Silicon Labs C8
 # Project 1: LED Bar Controller with ADC
 This program implements a constant-time infinite loop that controls two LEDs (red and green) based on the analog voltage read from a solar cell.
 
-#The algorithm works in three main steps:
+The algorithm works in three main steps:
 
 1. The solar cell voltage is converted into an 8-bit digital value (0–255).
 
@@ -29,7 +29,7 @@ Since the loop duration is constant, the sum of the red and green LED intervals 
 # Project 2: UART Character Sequence Transmitter
 This program implements an infinite loop (labeled start) that processes characters received via UART1 and transmits a sequence of ASCII codes to the terminal (e.g., PuTTY).
 
-#The algorithm works as follows:
+The algorithm works as follows:
 
 1. Receive input: The subroutine receiveByte receives one byte and stores it in the accumulator.
 
@@ -47,7 +47,7 @@ This program implements an infinite loop (labeled start) that processes characte
 
 The main routine initializes the system, then continuously calls this process in an infinite loop.
 
-#Subroutines
+* Subroutines
 
 - sendByte: Sends the ASCII code stored in R0 via UART1 by writing to SBUF1, waits for the transmission flag (TI1), then resets it.
 
